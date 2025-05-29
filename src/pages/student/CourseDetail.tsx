@@ -283,7 +283,7 @@ const StudentCourseDetail = () => {
               </CardHeader>
               <CardContent>
                 <div className="text-3xl font-bold text-green-600 mb-4">
-                  ${course.price}
+                  ₹{course.price}
                 </div>
                 {isEnrolled ? (
                   <div className="space-y-4">

@@ -384,7 +384,7 @@ const CourseEditor = () => {
               </div>
               
               <div>
-                <Label htmlFor="price">Price ($)</Label>
+                <Label htmlFor="price">Price ()</Label>
                 <Input
                   id="price"
                   type="number"

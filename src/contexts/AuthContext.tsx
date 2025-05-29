@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       console.log('Attempting login for:', email);
       
       // For demo purposes, we'll accept any password for demo accounts
-      if ((email === 'admin@lms.com' || email === 'student@lms.com') && password === 'password') {
+      if ((email === 'admin@demo.com' || email === 'student@demo.com') && password === 'password') {
         const { data: userData, error } = await supabase
           .from('users')
           .select('*')

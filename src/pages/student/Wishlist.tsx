@@ -24,7 +24,7 @@ const StudentWishlist = () => {
     removeFromWishlist(courseId);
     toast({
       title: "Enrolled successfully!",
-      description: `You are now enrolled in ${courseTitle}`,
+      description: `You are now enrolled in {courseTitle}`,
     });
   };
 
@@ -68,7 +68,7 @@ const StudentWishlist = () => {
                       <Trash2 className="w-4 h-4" />
                     </Button>
                   </div>
-                  <span className={`px-2 py-1 rounded text-xs font-medium w-fit ${
+                  <span className={`px-2 py-1 rounded text-xs font-medium w-fit {
                     course.category === 'Beginner' ? 'bg-green-100 text-green-800' :
                     course.category === 'Average' ? 'bg-yellow-100 text-yellow-800' :
                     'bg-red-100 text-red-800'
@@ -91,7 +91,7 @@ const StudentWishlist = () => {
                   <p className="text-sm text-gray-600 mb-4">Instructor: {course.instructor}</p>
                   <div className="space-y-2">
                     {mockEnrollments.includes(course.id) ? (
-                      <Link to={`/student/learn/${course.id}`}>
+                      <Link to={`/student/learn/{course.id}`}>
                         <Button className="w-full">Continue Learning</Button>
                       </Link>
                     ) : (
@@ -102,7 +102,7 @@ const StudentWishlist = () => {
                         Enroll Now
                       </Button>
                     )}
-                    <Link to={`/student/courses/${course.id}`}>
+                    <Link to={`/student/courses/{course.id}`}>
                       <Button variant="outline" className="w-full">View Details</Button>
                     </Link>
                   </div>

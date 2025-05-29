@@ -298,7 +298,7 @@ const StudentCourses = () => {
                 <p className="text-sm text-gray-600 mb-4">Instructor: {course.instructor}</p>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-2xl font-bold text-green-600">
-                    ${course.price}
+                    ₹{course.price}
                   </span>
                 </div>
                 <div className="flex gap-2">

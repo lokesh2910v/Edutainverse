@@ -138,7 +138,7 @@ const AdminCourses = () => {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">
-                ${courses.length > 0 ? (courses.reduce((sum, course) => sum + course.price, 0) / courses.length).toFixed(0) : '0'}
+                ₹{courses.length > 0 ? (courses.reduce((sum, course) => sum + course.price, 0) / courses.length).toFixed(0) : '0'}
               </div>
               <p className="text-xs text-muted-foreground">Per course</p>
             </CardContent>
@@ -176,7 +176,7 @@ const AdminCourses = () => {
               <CardContent>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-2xl font-bold text-green-600">
-                    ${course.price}
+                    {course.price}
                   </span>
                   <span className="text-sm text-gray-500">
                     {course.enrollment_count} students
@@ -184,7 +184,7 @@ const AdminCourses = () => {
                 </div>
                 
                 <div className="flex gap-2">
-                  <Link to={`/admin/courses/${course.id}/edit`} className="flex-1">
+                  <Link to={`/admin/courses/{course.id}/edit`} className="flex-1">
                     <Button variant="outline" className="w-full">
                       <Edit className="w-4 h-4 mr-2" />
                       Edit

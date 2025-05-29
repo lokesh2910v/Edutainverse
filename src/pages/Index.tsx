@@ -204,7 +204,7 @@ const Index = () => {
                         <span className="text-sm text-gray-500">({course.enrollmentCount})</span>
                       </div>
                       <div className="text-xl font-bold text-green-600">
-                        ${course.price}
+                        ₹{course.price}
                       </div>
                     </div>
                     <div className="flex items-center text-sm text-gray-500 space-x-4">
@@ -277,7 +277,7 @@ const Index = () => {
                         <span className="text-sm text-gray-500">({course.enrollmentCount})</span>
                       </div>
                       <div className="text-xl font-bold text-green-600">
-                        ${course.price}
+                        ₹{course.price}
                       </div>
                     </div>
                     <div className="flex items-center text-sm text-gray-500 space-x-4">
