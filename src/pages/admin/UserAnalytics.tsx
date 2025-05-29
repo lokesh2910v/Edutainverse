@@ -12,8 +12,8 @@ const AdminUserAnalytics = () => {
   const users = [
     {
       id: '1',
-      name: 'John Doe',
-      email: 'john@example.com',
+      name: 'Danush',
+      email: 'danush@example.com',
       enrolledCourses: 3,
       completedCourses: 1,
       totalProgress: 65,
@@ -21,8 +21,8 @@ const AdminUserAnalytics = () => {
     },
     {
       id: '2',
-      name: 'Jane Smith',
-      email: 'jane@example.com',
+      name: 'Rajesh',
+      email: 'Rajesh@example.com',
       enrolledCourses: 2,
       completedCourses: 2,
       totalProgress: 100,
@@ -30,8 +30,8 @@ const AdminUserAnalytics = () => {
     },
     {
       id: '3',
-      name: 'Mike Johnson',
-      email: 'mike@example.com',
+      name: 'mohan',
+      email: 'mohan@example.com',
       enrolledCourses: 1,
       completedCourses: 0,
       totalProgress: 25,
